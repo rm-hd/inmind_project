@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/reem/RiderProjects/project/Infrastructure/Infrastructure.csproj": {}
+    "/Users/reem/RiderProjects/project/project/Infrastructure/Infrastructure.csproj": {}
   },
   "projects": {
-    "/Users/reem/RiderProjects/project/Infrastructure/Infrastructure.csproj": {
+    "/Users/reem/RiderProjects/project/project/Infrastructure/Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/reem/RiderProjects/project/Infrastructure/Infrastructure.csproj",
+        "projectUniqueName": "/Users/reem/RiderProjects/project/project/Infrastructure/Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "/Users/reem/RiderProjects/project/Infrastructure/Infrastructure.csproj",
+        "projectPath": "/Users/reem/RiderProjects/project/project/Infrastructure/Infrastructure.csproj",
         "packagesPath": "/Users/reem/.nuget/packages/",
-        "outputPath": "/Users/reem/RiderProjects/project/Infrastructure/obj/",
+        "outputPath": "/Users/reem/RiderProjects/project/project/Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/reem/.nuget/NuGet/NuGet.Config"
@@ -46,6 +46,10 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.8, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
             }
           },
           "imports": [

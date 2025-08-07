@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/reem/RiderProjects/project/Persistance/Persistance.csproj": {}
+    "/Users/reem/RiderProjects/project/project/Persistance/Persistance.csproj": {}
   },
   "projects": {
-    "/Users/reem/RiderProjects/project/Domain/Domain.csproj": {
+    "/Users/reem/RiderProjects/project/project/Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/reem/RiderProjects/project/Domain/Domain.csproj",
+        "projectUniqueName": "/Users/reem/RiderProjects/project/project/Domain/Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/Users/reem/RiderProjects/project/Domain/Domain.csproj",
+        "projectPath": "/Users/reem/RiderProjects/project/project/Domain/Domain.csproj",
         "packagesPath": "/Users/reem/.nuget/packages/",
-        "outputPath": "/Users/reem/RiderProjects/project/Domain/obj/",
+        "outputPath": "/Users/reem/RiderProjects/project/project/Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/reem/.nuget/NuGet/NuGet.Config"
@@ -46,6 +46,10 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.8, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
             }
           },
           "imports": [
@@ -68,14 +72,14 @@
         }
       }
     },
-    "/Users/reem/RiderProjects/project/Persistance/Persistance.csproj": {
+    "/Users/reem/RiderProjects/project/project/Persistance/Persistance.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/reem/RiderProjects/project/Persistance/Persistance.csproj",
+        "projectUniqueName": "/Users/reem/RiderProjects/project/project/Persistance/Persistance.csproj",
         "projectName": "Persistance",
-        "projectPath": "/Users/reem/RiderProjects/project/Persistance/Persistance.csproj",
+        "projectPath": "/Users/reem/RiderProjects/project/project/Persistance/Persistance.csproj",
         "packagesPath": "/Users/reem/.nuget/packages/",
-        "outputPath": "/Users/reem/RiderProjects/project/Persistance/obj/",
+        "outputPath": "/Users/reem/RiderProjects/project/project/Persistance/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/reem/.nuget/NuGet/NuGet.Config"
@@ -90,8 +94,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/reem/RiderProjects/project/Domain/Domain.csproj": {
-                "projectPath": "/Users/reem/RiderProjects/project/Domain/Domain.csproj"
+              "/Users/reem/RiderProjects/project/project/Domain/Domain.csproj": {
+                "projectPath": "/Users/reem/RiderProjects/project/project/Domain/Domain.csproj"
               }
             }
           }
@@ -114,6 +118,10 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.8, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
             }
           },
           "imports": [

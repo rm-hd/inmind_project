@@ -1,6 +1,6 @@
 namespace Domain.Interfaces;
 
-public class ICommandHandler
+public interface ICommandHandler<T> where T : class
 {
-    
+    public Task Handle(T command, CancellationToken cancellationToken);
 }

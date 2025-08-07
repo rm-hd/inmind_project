@@ -1,6 +1,6 @@
 namespace Domain.Interfaces;
 
-public class IQueryHandler
+public interface IQueryHandler<T> where T : class
 {
-    
+    public Task<T> Handle(CancellationToken cancellationToken);
 }

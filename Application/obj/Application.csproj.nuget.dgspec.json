@@ -1,17 +1,163 @@
 {
   "format": 1,
   "restore": {
-    "/Users/reem/RiderProjects/project/Application/Application.csproj": {}
+    "/Users/reem/RiderProjects/project/project/Application/Application.csproj": {}
   },
   "projects": {
-    "/Users/reem/RiderProjects/project/Application/Application.csproj": {
+    "/Users/reem/RiderProjects/project/project/Application/Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/reem/RiderProjects/project/Application/Application.csproj",
+        "projectUniqueName": "/Users/reem/RiderProjects/project/project/Application/Application.csproj",
         "projectName": "Application",
-        "projectPath": "/Users/reem/RiderProjects/project/Application/Application.csproj",
+        "projectPath": "/Users/reem/RiderProjects/project/project/Application/Application.csproj",
         "packagesPath": "/Users/reem/.nuget/packages/",
-        "outputPath": "/Users/reem/RiderProjects/project/Application/obj/",
+        "outputPath": "/Users/reem/RiderProjects/project/project/Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/reem/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/reem/RiderProjects/project/project/common/common.csproj": {
+                "projectPath": "/Users/reem/RiderProjects/project/project/common/common.csproj"
+              },
+              "/Users/reem/RiderProjects/project/project/Domain/Domain.csproj": {
+                "projectPath": "/Users/reem/RiderProjects/project/project/Domain/Domain.csproj"
+              },
+              "/Users/reem/RiderProjects/project/project/Persistance/Persistance.csproj": {
+                "projectPath": "/Users/reem/RiderProjects/project/project/Persistance/Persistance.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[15.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.411/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/reem/RiderProjects/project/project/common/common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/reem/RiderProjects/project/project/common/common.csproj",
+        "projectName": "common",
+        "projectPath": "/Users/reem/RiderProjects/project/project/common/common.csproj",
+        "packagesPath": "/Users/reem/.nuget/packages/",
+        "outputPath": "/Users/reem/RiderProjects/project/project/common/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/reem/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.411/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/reem/RiderProjects/project/project/Domain/Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/reem/RiderProjects/project/project/Domain/Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "/Users/reem/RiderProjects/project/project/Domain/Domain.csproj",
+        "packagesPath": "/Users/reem/.nuget/packages/",
+        "outputPath": "/Users/reem/RiderProjects/project/project/Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/reem/.nuget/NuGet/NuGet.Config"
@@ -46,6 +192,82 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.8, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.411/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/reem/RiderProjects/project/project/Persistance/Persistance.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/reem/RiderProjects/project/project/Persistance/Persistance.csproj",
+        "projectName": "Persistance",
+        "projectPath": "/Users/reem/RiderProjects/project/project/Persistance/Persistance.csproj",
+        "packagesPath": "/Users/reem/.nuget/packages/",
+        "outputPath": "/Users/reem/RiderProjects/project/project/Persistance/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/reem/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/reem/RiderProjects/project/project/Domain/Domain.csproj": {
+                "projectPath": "/Users/reem/RiderProjects/project/project/Domain/Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
             }
           },
           "imports": [

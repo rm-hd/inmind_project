@@ -1,4 +1,4 @@
-namespace common.Dto;
+namespace common.Dtos;
 
 public class DriverDto
 {
