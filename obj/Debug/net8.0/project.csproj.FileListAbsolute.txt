@@ -1,0 +1,8 @@
+/Users/reem/RiderProjects/project/project/obj/Debug/net8.0/project.csproj.AssemblyReference.cache
+/Users/reem/RiderProjects/project/project/obj/Debug/net8.0/project.GeneratedMSBuildEditorConfig.editorconfig
+/Users/reem/RiderProjects/project/project/obj/Debug/net8.0/project.AssemblyInfoInputs.cache
+/Users/reem/RiderProjects/project/project/obj/Debug/net8.0/project.AssemblyInfo.cs
+/Users/reem/RiderProjects/project/project/obj/Debug/net8.0/project.csproj.CoreCompileInputs.cache
+/Users/reem/RiderProjects/project/project/obj/Debug/net8.0/project.MvcApplicationPartsAssemblyInfo.cs
+/Users/reem/RiderProjects/project/project/obj/Debug/net8.0/project.MvcApplicationPartsAssemblyInfo.cache
+/Users/reem/RiderProjects/project/project/obj/Debug/net8.0/project.sourcelink.json

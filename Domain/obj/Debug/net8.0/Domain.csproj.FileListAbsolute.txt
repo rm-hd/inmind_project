@@ -1,0 +1,15 @@
+/Users/reem/RiderProjects/project/project/Domain/bin/Debug/net8.0/Domain.deps.json
+/Users/reem/RiderProjects/project/project/Domain/bin/Debug/net8.0/Domain.dll
+/Users/reem/RiderProjects/project/project/Domain/bin/Debug/net8.0/Domain.pdb
+/Users/reem/RiderProjects/project/project/Domain/obj/Debug/net8.0/Domain.csproj.AssemblyReference.cache
+/Users/reem/RiderProjects/project/project/Domain/obj/Debug/net8.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/reem/RiderProjects/project/project/Domain/obj/Debug/net8.0/Domain.AssemblyInfoInputs.cache
+/Users/reem/RiderProjects/project/project/Domain/obj/Debug/net8.0/Domain.AssemblyInfo.cs
+/Users/reem/RiderProjects/project/project/Domain/obj/Debug/net8.0/Domain.csproj.CoreCompileInputs.cache
+/Users/reem/RiderProjects/project/project/Domain/obj/Debug/net8.0/Domain.sourcelink.json
+/Users/reem/RiderProjects/project/project/Domain/obj/Debug/net8.0/Domain.dll
+/Users/reem/RiderProjects/project/project/Domain/obj/Debug/net8.0/refint/Domain.dll
+/Users/reem/RiderProjects/project/project/Domain/obj/Debug/net8.0/Domain.pdb
+/Users/reem/RiderProjects/project/project/Domain/obj/Debug/net8.0/ref/Domain.dll
+/Users/reem/RiderProjects/project/project/Domain/bin/Debug/net8.0/Domain.runtimeconfig.json
+/Users/reem/RiderProjects/project/project/Domain/obj/Debug/net8.0/Domain.genruntimeconfig.cache

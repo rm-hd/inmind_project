@@ -8,7 +8,5 @@ public class CreateDriverCommand
     public string Name { get; set; } = string.Empty;
     [Required]
     public string LicenseNumber { get; set; } = string.Empty;
-    [Required]
-    public Guid VehicleId { get; set; } 
 
 }
