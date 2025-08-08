@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Application.Commands;
+namespace Application.Commands.Driver;
 
 public class CreateDriverCommand
 {

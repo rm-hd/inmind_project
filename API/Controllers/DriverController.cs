@@ -1,4 +1,5 @@
 using Application.Commands;
+using Application.Commands.Driver;
 using common.Dtos;
 using Domain.Interfaces;
 using Microsoft.AspNetCore.Mvc;
@@ -26,7 +27,7 @@ public class DriverController: ControllerBase
     [HttpGet]
     public async Task<IActionResult> Get(IQueryHandler<IEnumerable<DriverDto>> handler,CancellationToken cancellationToken)
     {
-        var drivers = handler.Handle(cancellationToken);
+        var drivers =await handler.Handle(cancellationToken);
         return Ok(drivers);
     }
     

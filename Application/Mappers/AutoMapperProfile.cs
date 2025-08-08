@@ -1,4 +1,5 @@
 using Application.Commands;
+using Application.Commands.Driver;
 using Application.Commands.Vehicle;
 using AutoMapper;
 using common.Dtos;

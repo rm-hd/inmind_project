@@ -1,6 +1,7 @@
 using Application.CommandHandler.Driver;
 using Application.CommandHandler.Vehicle;
 using Application.Commands;
+using Application.Commands.Driver;
 using Application.Commands.Vehicle;
 using Application.Mappers;
 using Application.QueryHandler;
@@ -23,6 +24,8 @@ builder.Services.AddScoped<ICommandHandler<DeleteDriverCommand>, DeleteDriverCom
 builder.Services.AddScoped<ICommandHandler<CreateVehicleCommand>, CreateVehicleCommandHandler>();
 builder.Services.AddScoped<ICommandHandler<UpdateVehicleCommand>, UpdateVehicleCommandHandler>();
 builder.Services.AddScoped<ICommandHandler<DeleteVehicleCommand>, DeleteVehicleCommandHandler>();
+
+builder.Services.AddScoped<ICommandHandler<AssignDriverCommand>,AssignDriverCommandHandler>();
 
 builder.Services.AddScoped<IQueryHandler<IEnumerable<DriverDto>>,GetAllDriverQueryHandler>();
 builder.Services.AddScoped<IQueryHandler<IEnumerable<VehicleDto>>,GetAllVehiclesQueryHandler>();
