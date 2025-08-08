@@ -13,4 +13,5 @@ public class CreateVehicleLocationCommand
     [Range(-180, 180, ErrorMessage = "Longitude must be between -180 and 180")]
     public double Longitude { get; set; }
     
+    public DateTime Timestamp { get; set; } = DateTime.UtcNow;
 }

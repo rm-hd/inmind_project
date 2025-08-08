@@ -6,7 +6,7 @@ namespace API.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class VehicleLocationController: ControllerBase
+public class VehicleLocationController:ControllerBase
 {
     
     
@@ -17,4 +17,5 @@ public class VehicleLocationController: ControllerBase
 
         return Ok();
     }
+    
 }

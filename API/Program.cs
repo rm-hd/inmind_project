@@ -13,6 +13,8 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Persistance;
+using Serilog;
+using Serilog.Events;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -54,6 +56,30 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 builder.Services.AddProblemDetails();
 builder.Services.AddSignalR();
+builder.Services.AddMemoryCache();
+builder.Services.AddHealthChecks();
+
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Debug()
+    .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
+    .MinimumLevel.Override("Microsoft.AspNetCore", LogEventLevel.Warning)
+    .Enrich.FromLogContext()
+    .WriteTo.Console(
+        outputTemplate: "[{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz}] [{Level:u3}] [{SourceContext}] {Message:lj}{NewLine}{Exception}")
+    .WriteTo.File(
+        path: "logs/app-.txt",
+        rollingInterval: RollingInterval.Day,
+        retainedFileCountLimit: 30,
+        fileSizeLimitBytes: 10 * 1024 * 1024, // 10MB
+        rollOnFileSizeLimit: true,
+        shared: true,
+        flushToDiskInterval: TimeSpan.FromSeconds(1),
+        outputTemplate: "[{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz}] [{Level:u3}] [{SourceContext}] {Message:lj}{NewLine}{Exception}")
+
+    .CreateLogger();
+
+
+Log.Information("server is running");
 
 var app = builder.Build();
 

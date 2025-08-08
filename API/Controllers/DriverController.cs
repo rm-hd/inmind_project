@@ -8,7 +8,6 @@ using Microsoft.AspNetCore.Mvc;
 namespace API.Controllers;
 [ApiController]
 [Route("api/[controller]")]
-
 public class DriverController: ControllerBase
 {
     
@@ -25,16 +24,15 @@ public class DriverController: ControllerBase
         _updateDriverCommandHandler = updateDriverCommandHandler;
         _assignDriverCommandHandler = assignDriverCommandHandler;
     }
-    
-    
     [Authorize(Roles = "fleet-admin")]
     [HttpGet]
     public async Task<IActionResult> Get(IQueryHandler<IEnumerable<DriverDto>> handler,CancellationToken cancellationToken)
     {
-        var drivers =await handler.Handle(cancellationToken);
+       var drivers =await handler.Handle(cancellationToken);
+        
+       
         return Ok(drivers);
     }
-    
     [Authorize(Roles = "fleet-user")]
     [HttpPost]
     public async Task<IActionResult> Create(CreateDriverCommand command, CancellationToken cancellationToken)
@@ -42,7 +40,6 @@ public class DriverController: ControllerBase
         await _createDriverCommandHandler.Handle(command, cancellationToken);
         return Created();
     }
-
     [Authorize(Roles = "fleet-user")]
     [HttpPut("{id:Guid}")]
     public async Task<IActionResult> Update(UpdateDriverCommand command,Guid id, CancellationToken cancellationToken)
@@ -51,7 +48,6 @@ public class DriverController: ControllerBase
         await _updateDriverCommandHandler.Handle(command, cancellationToken);
         return NoContent();
     }
-    
     [Authorize(Roles = "fleet-admin")]
     [HttpPost("assign")]
     public async Task<IActionResult> Assign(AssignDriverCommand command, CancellationToken cancellationToken)
@@ -59,7 +55,6 @@ public class DriverController: ControllerBase
         await _assignDriverCommandHandler.Handle(command, cancellationToken);
         return Created();
     }
-    
     [Authorize(Roles = "fleet-admin")]
     [HttpDelete("{id:Guid}")]
     public async Task<IActionResult> Delete(Guid id, ICommandHandler<DeleteDriverCommand> commandHandler,CancellationToken cancellationToken)
