@@ -1,10 +1,10 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Application.Commands;
+namespace Application.Commands.Driver;
 
 public class UpdateDriverCommand
 {
-    [Required]
+    
     public Guid Id { get; set; }
     
     [Required]

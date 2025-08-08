@@ -7,7 +7,9 @@ using Application.Mappers;
 using Application.QueryHandler;
 using common.Dtos;
 using Domain.Interfaces;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Persistance;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -25,8 +27,6 @@ builder.Services.AddScoped<ICommandHandler<CreateVehicleCommand>, CreateVehicleC
 builder.Services.AddScoped<ICommandHandler<UpdateVehicleCommand>, UpdateVehicleCommandHandler>();
 builder.Services.AddScoped<ICommandHandler<DeleteVehicleCommand>, DeleteVehicleCommandHandler>();
 
-builder.Services.AddScoped<ICommandHandler<AssignDriverCommand>,AssignDriverCommandHandler>();
-
 builder.Services.AddScoped<IQueryHandler<IEnumerable<DriverDto>>,GetAllDriverQueryHandler>();
 builder.Services.AddScoped<IQueryHandler<IEnumerable<VehicleDto>>,GetAllVehiclesQueryHandler>();
 
@@ -36,20 +36,32 @@ builder.Services.AddAutoMapper(cfg => {
 });
  
 builder.Services.AddSwaggerGen();
-
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(o =>
+    {
+        o.RequireHttpsMetadata = false;
+        o.Audience = builder.Configuration["Authentication:Audience"];
+        o.MetadataAddress = builder.Configuration["Authentication:MetadataAddress"];
+        o.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidIssuer = builder.Configuration["Authentication:ValidIssuer"],
+            ValidAudience = builder.Configuration["Jwt:Audience"],
+            ClockSkew = TimeSpan.Zero
+        };
+    });
 
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
 {
+    // Add Swagger middleware - these depend on the services above
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
 
-
 app.UseHttpsRedirection();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
