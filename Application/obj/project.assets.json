@@ -1108,19 +1108,6 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "common/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4"
-        },
-        "compile": {
-          "bin/placeholder/common.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/common.dll": {}
-        }
-      },
       "Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -3278,11 +3265,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "common/1.0.0": {
-      "type": "project",
-      "path": "../common/common.csproj",
-      "msbuildProject": "../common/common.csproj"
-    },
     "Domain/1.0.0": {
       "type": "project",
       "path": "../Domain/Domain.csproj",
@@ -3305,8 +3287,7 @@
       "Persistance >= 1.0.0",
       "Swashbuckle.AspNetCore.Swagger >= 9.0.3",
       "Swashbuckle.AspNetCore.SwaggerGen >= 9.0.3",
-      "Swashbuckle.AspNetCore.SwaggerUI >= 9.0.3",
-      "common >= 1.0.0"
+      "Swashbuckle.AspNetCore.SwaggerUI >= 9.0.3"
     ]
   },
   "packageFolders": {
@@ -3334,9 +3315,6 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/reem/RiderProjects/project/project/common/common.csproj": {
-              "projectPath": "/Users/reem/RiderProjects/project/project/common/common.csproj"
-            },
             "/Users/reem/RiderProjects/project/project/Domain/Domain.csproj": {
               "projectPath": "/Users/reem/RiderProjects/project/project/Domain/Domain.csproj"
             },

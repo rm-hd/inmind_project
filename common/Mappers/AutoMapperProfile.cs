@@ -1,11 +1,10 @@
-using Application.Commands;
+using AutoMapper;
+using Domain.Entities;
 using Application.Commands.Driver;
 using Application.Commands.Vehicle;
-using AutoMapper;
-using common.Dtos;
-using Domain.Entities;
+using Application.Dtos;
 
-namespace Application.Mappers;
+namespace common.Mappers;
 
 public class AutoMapperProfile: Profile
 {

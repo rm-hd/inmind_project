@@ -17,8 +17,7 @@
           "Persistance": "1.0.0",
           "Swashbuckle.AspNetCore.Swagger": "9.0.3",
           "Swashbuckle.AspNetCore.SwaggerGen": "9.0.3",
-          "Swashbuckle.AspNetCore.SwaggerUI": "9.0.3",
-          "common": "1.0.0"
+          "Swashbuckle.AspNetCore.SwaggerUI": "9.0.3"
         },
         "runtime": {
           "Application.dll": {}
@@ -753,17 +752,6 @@
         }
       },
       "System.Threading.Channels/7.0.0": {},
-      "common/1.0.0": {
-        "dependencies": {
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4"
-        },
-        "runtime": {
-          "common.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
       "Domain/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "9.0.8",
@@ -1167,11 +1155,6 @@
       "sha512": "sha512-qmeeYNROMsONF6ndEZcIQ+VxR4Q/TX/7uIVLJqtwIWL7dDWeh0l1UIqgo4wYyjG//5lUNhwkLDSFl+pAWO6oiA==",
       "path": "system.threading.channels/7.0.0",
       "hashPath": "system.threading.channels.7.0.0.nupkg.sha512"
-    },
-    "common/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     },
     "Domain/1.0.0": {
       "type": "project",

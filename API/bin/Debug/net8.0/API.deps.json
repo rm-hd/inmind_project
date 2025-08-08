@@ -16,7 +16,8 @@
           "Microsoft.EntityFrameworkCore.Tools": "9.0.8",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
           "Persistance": "1.0.0",
-          "Swashbuckle.AspNetCore": "6.6.2"
+          "Swashbuckle.AspNetCore": "6.6.2",
+          "common": "1.0.0"
         },
         "runtime": {
           "API.dll": {}
@@ -827,8 +828,7 @@
           "Persistance": "1.0.0",
           "Swashbuckle.AspNetCore.Swagger": "9.0.3",
           "Swashbuckle.AspNetCore.SwaggerGen": "9.0.3",
-          "Swashbuckle.AspNetCore.SwaggerUI": "9.0.3",
-          "common": "1.0.0"
+          "Swashbuckle.AspNetCore.SwaggerUI": "9.0.3"
         },
         "runtime": {
           "Application.dll": {
@@ -839,7 +839,11 @@
       },
       "common/1.0.0": {
         "dependencies": {
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4"
+          "Application": "1.0.0",
+          "AutoMapper": "15.0.1",
+          "Domain": "1.0.0",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
+          "Persistance": "1.0.0"
         },
         "runtime": {
           "common.dll": {

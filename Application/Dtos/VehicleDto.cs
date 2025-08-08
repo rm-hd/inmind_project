@@ -1,4 +1,4 @@
-namespace common.Dtos;
+namespace Application.Dtos;
 
 public class VehicleDto
 {

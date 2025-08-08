@@ -29,6 +29,9 @@
               "/Users/reem/RiderProjects/project/project/Application/Application.csproj": {
                 "projectPath": "/Users/reem/RiderProjects/project/project/Application/Application.csproj"
               },
+              "/Users/reem/RiderProjects/project/project/common/common.csproj": {
+                "projectPath": "/Users/reem/RiderProjects/project/project/common/common.csproj"
+              },
               "/Users/reem/RiderProjects/project/project/Persistance/Persistance.csproj": {
                 "projectPath": "/Users/reem/RiderProjects/project/project/Persistance/Persistance.csproj"
               }
@@ -128,9 +131,6 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/reem/RiderProjects/project/project/common/common.csproj": {
-                "projectPath": "/Users/reem/RiderProjects/project/project/common/common.csproj"
-              },
               "/Users/reem/RiderProjects/project/project/Domain/Domain.csproj": {
                 "projectPath": "/Users/reem/RiderProjects/project/project/Domain/Domain.csproj"
               },
@@ -233,7 +233,17 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/reem/RiderProjects/project/project/Application/Application.csproj": {
+                "projectPath": "/Users/reem/RiderProjects/project/project/Application/Application.csproj"
+              },
+              "/Users/reem/RiderProjects/project/project/Domain/Domain.csproj": {
+                "projectPath": "/Users/reem/RiderProjects/project/project/Domain/Domain.csproj"
+              },
+              "/Users/reem/RiderProjects/project/project/Persistance/Persistance.csproj": {
+                "projectPath": "/Users/reem/RiderProjects/project/project/Persistance/Persistance.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -251,6 +261,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[15.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",

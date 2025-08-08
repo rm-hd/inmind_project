@@ -1,5 +1,5 @@
 using Application.Commands.Vehicle;
-using common.Dtos;
+using Application.Dtos;
 using Domain.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;

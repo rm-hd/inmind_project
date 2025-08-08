@@ -13,3 +13,10 @@
 /Users/reem/RiderProjects/project/project/common/obj/Debug/net8.0/ref/common.dll
 /Users/reem/RiderProjects/project/project/common/bin/Debug/net8.0/common.runtimeconfig.json
 /Users/reem/RiderProjects/project/project/common/obj/Debug/net8.0/common.genruntimeconfig.cache
+/Users/reem/RiderProjects/project/project/common/bin/Debug/net8.0/Application.dll
+/Users/reem/RiderProjects/project/project/common/bin/Debug/net8.0/Domain.dll
+/Users/reem/RiderProjects/project/project/common/bin/Debug/net8.0/Persistance.dll
+/Users/reem/RiderProjects/project/project/common/bin/Debug/net8.0/Domain.pdb
+/Users/reem/RiderProjects/project/project/common/bin/Debug/net8.0/Persistance.pdb
+/Users/reem/RiderProjects/project/project/common/bin/Debug/net8.0/Application.pdb
+/Users/reem/RiderProjects/project/project/common/obj/Debug/net8.0/common.csproj.Up2Date

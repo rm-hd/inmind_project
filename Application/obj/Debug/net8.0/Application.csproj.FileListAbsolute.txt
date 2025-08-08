@@ -1,10 +1,8 @@
 /Users/reem/RiderProjects/project/project/Application/bin/Debug/net8.0/Application.deps.json
 /Users/reem/RiderProjects/project/project/Application/bin/Debug/net8.0/Application.dll
 /Users/reem/RiderProjects/project/project/Application/bin/Debug/net8.0/Application.pdb
-/Users/reem/RiderProjects/project/project/Application/bin/Debug/net8.0/common.dll
 /Users/reem/RiderProjects/project/project/Application/bin/Debug/net8.0/Domain.dll
 /Users/reem/RiderProjects/project/project/Application/bin/Debug/net8.0/Persistance.dll
-/Users/reem/RiderProjects/project/project/Application/bin/Debug/net8.0/common.pdb
 /Users/reem/RiderProjects/project/project/Application/bin/Debug/net8.0/Domain.pdb
 /Users/reem/RiderProjects/project/project/Application/bin/Debug/net8.0/Persistance.pdb
 /Users/reem/RiderProjects/project/project/Application/obj/Debug/net8.0/Application.csproj.AssemblyReference.cache

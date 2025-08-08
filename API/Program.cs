@@ -1,11 +1,12 @@
+using API.ExceptionHandlers;
 using Application.CommandHandler.Driver;
 using Application.CommandHandler.Vehicle;
 using Application.Commands;
 using Application.Commands.Driver;
 using Application.Commands.Vehicle;
-using Application.Mappers;
 using Application.QueryHandler;
-using common.Dtos;
+using Application.Dtos;
+using common.Mappers;
 using Domain.Interfaces;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
@@ -50,6 +51,8 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         };
     });
 
+builder.Services.AddProblemDetails();
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -59,11 +62,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
-
+app.UseMiddleware<ValidationExceptionMiddleware>();
+app.UseMiddleware<GlobalExceptionMiddleware>();
 app.MapControllers();
-
 app.Run();
