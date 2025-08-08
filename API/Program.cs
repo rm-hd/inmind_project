@@ -1,3 +1,4 @@
+using API;
 using API.ExceptionHandlers;
 using Application.CommandHandler.Driver;
 using Application.CommandHandler.Vehicle;
@@ -52,6 +53,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     });
 
 builder.Services.AddProblemDetails();
+builder.Services.AddSignalR();
 
 var app = builder.Build();
 
@@ -61,6 +63,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.MapHub<VehicleHub>("/vehicleLocation");
 
 app.UseHttpsRedirection();
 app.UseAuthentication();
